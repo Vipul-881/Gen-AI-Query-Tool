@@ -1,0 +1,36 @@
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 1px;
+}
+
+.horizontal-panels {
+  flex: 0 0 auto;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.v-panel{
+  flex: 0 0 auto;
+  overflow: auto;
+}
+
+.DetailsPanel {
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.output-panel {
+  flex: 1; /* Allow the DataView to take the remaining space */
+  overflow: auto;
+}
+
+
+

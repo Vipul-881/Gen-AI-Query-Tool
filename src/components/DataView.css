@@ -1,0 +1,66 @@
+.dataview-container{
+    border : 4px solid white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 10px;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.graph-container {
+    width: 40%;
+    height: 40%;  
+}
+
+.line-graph-container {
+    /* Specific styles for Line Graph */
+    width: 80%;
+    height: 80%; 
+}
+
+.pie-graph-container {
+    /* Specific styles for Pie Chart */
+    width: 70%;
+    height: 70%;
+}
+
+.bar-graph-container {
+    /* Specific styles for Bar Chart */
+    width: 80%;
+    height: 80%;
+}
+
+.graph-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.control-item {
+    flex: 1;
+}
+
+.view-change{
+    font-size: 15px;
+    /* display: inline-block; */
+}
+
+select{
+    font-size: 15px;
+}
+
+/* Table adjustments */
+.center {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    border-collapse: collapse; /* Collapse borders for snug fit */
+    overflow: auto; /* Handle overflow */
+}
+
+.center th, .center td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}

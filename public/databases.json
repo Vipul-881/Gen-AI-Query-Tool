@@ -1,0 +1,20 @@
+{
+    "resultMessage": "",
+    "errorNo": 0,
+    "dTable": [
+      {
+        "connection_name": "PHARMA CONTROL",
+        "shortcut_name": "PCtrl"
+      },
+      {
+        "connection_name": "YIELD MANAGEMENT SYSTEM",
+        "shortcut_name": "YMS"
+      },
+      {
+        "connection_name": "YIELD MANAGEMENT SYSTEM2",
+        "shortcut_name": "YMS2"
+      }
+    ],
+    "httpResp": null
+  }
+  

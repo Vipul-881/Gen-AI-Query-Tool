@@ -1,0 +1,63 @@
+.main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #c9deee;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 3px;
+  }
+  
+  .panel-button {
+    height: 40px;
+    margin: 5px;
+    display: inline-block;
+    line-height: 10px;
+    background-color: white;
+    border: 3px solid #c9deee;
+    border-radius: 7px;
+    color: #212d72;
+    font-size: 13px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 450;
+    font-style: normal;
+    padding: 8px 8px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s;
+  }
+  
+  .panel-button:hover {
+    background-color: rgb(58, 98, 162);
+    color: white;
+    border: 3px solid white;
+    cursor: pointer;
+  }
+
+  .panel-button.selected {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  .button-container {
+    vertical-align: middle;
+    display: inline-block;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 98%;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #78a9ca #f0f4f7;
+  }

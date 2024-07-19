@@ -1,0 +1,62 @@
+{
+    "resultMessage": "",
+    "errorNo": 0,
+    "dTable": [
+      {
+        "connection_name": "YIELD MANAGEMENT SYSTEM",
+        "function_name": "SHIPMENTS",
+        "apI_QUESTION": "give me shipped quantities by customer",
+        "sql_text": "\r\nSELECT \r\n    SHIPMENT_CUSTOMER,\r\n    SUM(SHIPMENT_QTY) AS TOTAL_SHIPPED_QTY\r\nFROM \r\n    SHIPMENT_HISTORY_DETAILS\r\nGROUP BY \r\n    SHIPMENT_CUSTOMER;",
+        "default_xaxis": "SHIPMENT_CUSTOMER",
+        "default_yaxis": "TOTAL_SHIPPED_QTY",
+        "shortcut_name": "SHP by CUST"
+      },
+      {
+        "connection_name": "YIELD MANAGEMENT SYSTEM",
+        "function_name": "SHIPMENTS",
+        "apI_QUESTION": "GIVE ME SHIPPED QUANTITIES BY QUARTER, CUSTOMER,PRODUCT FOR THE LAST 3 QUARTERS BASED ON SHIPPED DATE'S DATE PORTION",
+        "sql_text": "\r\nSELECT \r\n    c.YEAR,\r\n    c.QUARTER,\r\n    s.SHIPMENT_CUSTOMER,\r\n    p.PRODUCT_NAME,\r\n    SUM(s.SHIPMENT_QTY) AS TOTAL_SHIPPED_QTY\r\nFROM \r\n    SHIPMENT_HISTORY_DETAILS s\r\nJOIN \r\n    CALENDAR_DATA c ON CONVERT(date, s.SHIPMENT_DATE) = c.CALENDAR_DATE\r\nJOIN \r\n    COMPLETED_LOT_DETAILS cl ON s.LOTID = cl.LOTID\r\nJOIN \r\n    PRODUCT p ON cl.PRODUCTID = p.PRODUCTID\r\nWHERE \r\n    c.CALENDAR_DATE >= DATEADD(QUARTER, -3, GETDATE())\r\nGROUP BY \r\n    c.YEAR,\r\n    c.QUARTER,\r\n    s.SHIPMENT_CUSTOMER,\r\n    p.PRODUCT_NAME\r\nORDER BY \r\n    c.YEAR DESC,\r\n    c.QUARTER DESC,\r\n    s.SHIPMENT_CUSTOMER,\r\n    p.PRODUCT_NAME;",
+        "default_xaxis": "",
+        "default_yaxis": "",
+        "shortcut_name": "SHIPEMENTS BY QTR"
+      },
+      {
+        "connection_name": "YIELD MANAGEMENT SYSTEM",
+        "function_name": "MANUFACTURING KPI",
+        "apI_QUESTION": "give me lots that are shipped in last 5 days with total defect quantity for the lots is > 10 and their lot start and shipped quantity",
+        "sql_text": "\r\nSELECT \r\n    shd.LOTID,\r\n    cld.START_QTY,\r\n    shd.SHIPMENT_QTY,\r\n    SUM(dhid.DEFECT_QTY) AS TOTAL_DEFECT_QTY\r\nFROM \r\n    SHIPMENT_HISTORY_DETAILS shd\r\nJOIN \r\n    COMPLETED_LOT_DETAILS cld ON shd.LOTID = cld.LOTID\r\nJOIN \r\n    DEFECT_HISTORY_HEADER_DETAILS dhhd ON shd.LOTID = dhhd.LOTID\r\nJOIN \r\n    DEFECT_HISTORY_ITEM_DETAILS dhid ON dhhd.DEFECT_HISTORY_HEADER_DETAILSID = dhid.DEFECT_HISTORY_HEADER_DETAILSID\r\nWHERE \r\n    shd.SHIPMENT_DATE >= DATEADD(day, -5, GETDATE())\r\nGROUP BY \r\n    shd.LOTID, cld.START_QTY, shd.SHIPMENT_QTY\r\nHAVING \r\n    SUM(dhid.DEFECT_QTY) > 10;",
+        "default_xaxis": "",
+        "default_yaxis": "",
+        "shortcut_name": "SHIPPED LOT DEFECTS"
+      },
+      {
+        "connection_name": "YIELD MANAGEMENT SYSTEM",
+        "function_name": "CYCLETIME",
+        "apI_QUESTION": "what is cycletime by operation group",
+        "sql_text": "\rSELECT\r    YIELD_BY,\r    OPERATION_GROUP_NAME,\r    CYCLETIME\rFROM\r    CYCLETIME_BY_OPERATION_GROUP;",
+        "default_xaxis": "OPERATION_GROUP_NAME",
+        "default_yaxis": "CYCLETIME",
+        "shortcut_name": "CT OG"
+      },
+      {
+        "connection_name": "YIELD MANAGEMENT SYSTEM",
+        "function_name": "CYCLETIME",
+        "apI_QUESTION": "what is cycletime by product",
+        "sql_text": "\rSELECT\r    YIELD_BY,\r    PRODUCT_NAME,\r    CYCLETIME\rFROM \r    CYCLETIME_BY_PRODUCT;",
+        "default_xaxis": "PRODUCT_NAME",
+        "default_yaxis": "CYCLETIME",
+        "shortcut_name": "CT Product"
+      },
+      {
+        "connection_name": "YIELD MANAGEMENT SYSTEM",
+        "function_name": "YIELD",
+        "apI_QUESTION": "what is yield by product group",
+        "sql_text": "\rSELECT * FROM YIELD_BY_PRODUCT_GROUP;",
+        "default_xaxis": "YIELD_FOR",
+        "default_yaxis": "YIELD_PERCENTAGE",
+        "shortcut_name": "PG YLD"
+      }
+    ],
+    "httpResp": null
+  }
+  

@@ -1,0 +1,224 @@
+{
+    "resultMessage": "",
+    "errorNo": 0,
+    "dTable": [
+      {
+        "functioN_NAME": "CYCLETIME",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "CYCLETIME_BY_OPERATION",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "CYCLETIME",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "CYCLETIME_BY_OPERATION_GROUP",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "CYCLETIME",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "CYCLETIME_BY_PRODUCT",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "CYCLETIME",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "CYCLETIME_BY_PRODUCT_GROUP",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "MANUFACTURING KPI",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "WIP_LOT_DETAILS",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "MANUFACTURING KPI",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "DEFECT_HISTORY_HEADER_DETAILS",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "MANUFACTURING KPI",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "DEFECT_HISTORY_ITEM_DETAILS",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "MANUFACTURING KPI",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "LOT_HISTORY_DETAILS",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "MANUFACTURING KPI",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "LOT_STATUS",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "MANUFACTURING KPI",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "SHIPMENT_HISTORY_DETAILS",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "MANUFACTURING KPI",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "TRANSACTION_NAMES",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "MANUFACTURING KPI",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "COMPLETED_LOT_DETAILS",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "SHIPMENTS",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "DEFECT_HISTORY_HEADER_DETAILS",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "SHIPMENTS",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "DEFECT_HISTORY_ITEM_DETAILS",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "SHIPMENTS",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "SHIPMENT_HISTORY_DETAILS",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "SHIPMENTS",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "PRODUCT",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "SHIPMENTS",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "CALENDAR_DATA",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "SHIPMENTS",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "COMPLETED_LOT_DETAILS",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "WIPs",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "DEFECT_HISTORY_HEADER_DETAILS",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "WIPs",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "DEFECT_HISTORY_ITEM_DETAILS",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "WIPs",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "LOT_STATUS",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "WIPs",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "TRANSACTION_NAMES",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "WIPs",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "WIP_LOT_DETAILS",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "WIPs",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "CALENDAR_DATA",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "WIPs",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "EQUIPMENT",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "WIPs",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "DEFECTS_CODES",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "WIPs",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "INVENTORY_LOCATION",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "WIPs",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "LINE_DETAILS",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "WIPs",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "LOT_TYPE",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "WIPs",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "OPERATION",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "WIPs",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "PRODUCT",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "YIELD",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "YIELD_BY_OPERATION",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "YIELD",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "YIELD_BY_OPERATION_GROUP",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "YIELD",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "YIELD_BY_PRODUCT",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "YIELD",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "YIELD_BY_PRODUCT_GROUP",
+        "iS_ACTIVE": 0
+      },
+      {
+        "functioN_NAME": "YIELD",
+        "connectioN_NAME": "YIELD MANAGEMENT SYSTEM",
+        "dB_TABLE_NAME": "YIELD_BY_TXNDATE",
+        "iS_ACTIVE": 0
+      }
+    ],
+    "httpResp": null
+  }
+  
